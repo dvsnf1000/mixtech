@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Portal Culinário</title>
+    <style>
+        /* ==========================================
+   1. VARIÁVEIS E ESTILOS BASE
+   ========================================== */
+:root {
+    --bg-main: #0d0f12;
+    --bg-card: #161a22;
+    --bg-hover: #1f2430;
+    --accent-amber: #e5a93c;
+    --accent-gold: #f59e0b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #2a313d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* ==========================================
+   2. HUB PRINCIPAL (MENU DE BOTÕES)
+   ========================================== */
+.botão-fundo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.botão {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-primary);
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botão h3 {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--text-secondary);
+}
+
+.botão:hover {
+    background-color: var(--bg-hover);
+    border-color: var(--accent-amber);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 
+                0 0 15px rgba(229, 169, 60, 0.1);
+}
+
+/* Linha inferior animada */
+.botão::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-amber), var(--accent-gold));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.botão:hover::after {
+    opacity: 1;
+}
+
+/* ==========================================
+   3. PÁGINAS INTERNAS DE CONTEÚDO
+   ========================================== */
+.btn-voltar {
+    display: inline-block;
+    color: var(--accent-amber);
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    transition: color 0.2s ease;
+}
+
+.btn-voltar:hover {
+    color: var(--accent-gold);
+}
+
+header {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--text-secondary);
+}
+
+/* Grid de Artigos */
+.grid-conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-item {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-amber);
+}
+
+.card-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-amber);
+}
+
+.card-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="btn-voltar">← Voltar para o Hub</a>
+
+        <header>
+            <h1>Receitas Práticas</h1>
+            <p>Técnicas essenciais de preparo e receitas fundamentais.</p>
+        </header>
+
+        <main class="grid-conteudo">
+            <article class="card-item">
+                <h2>Molho de Tomate Artesanal</h2>
+                <p>Técnicas de cozimento lento para extrair o melhor sabor dos tomates frescos.</p>
+            </article>
+
+            <article class="card-item">
+                <h2>Massa de Pizza Caseira</h2>
+                <p>Como acertar o ponto da fermentação e obter uma borda crocante.</p>
+            </article>
+
+            <article class="card-item">
+                <h2>Risoto Clássico</h2>
+                <p>O segredo da cremosidade e o tempo correto de adição do caldo.</p>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>

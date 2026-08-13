@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E VARIÁVEIS
+   ========================================================================== */
+:root {
+    --bg-main: #0d0f12;          /* Fundo escuro profundo */
+    --bg-card: #161a22;          /* Fundo dos cartões */
+    --bg-card-hover: #1f2430;    /* Fundo dos cartões ao passar o rato */
+    --accent-amber: #e5a93c;     /* Cor dourada/âmbar (lembra destilados) */
+    --accent-gold: #f59e0b;      /* Destaques secundários */
+    --text-primary: #f8fafc;     /* Texto principal */
+    --text-secondary: #94a3b8;   /* Texto secundário/subtítulos */
+    --border-color: #2a313d;     /* Bordas suaves */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+/* Container Principal */
+.hub-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. CABEÇALHO DO HUB (HEADER)
+   ========================================================================== */
+.hub-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hub-header .avatar {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--accent-amber), var(--accent-gold));
+    color: #000;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem auto;
+    box-shadow: 0 4px 20px rgba(229, 169, 60, 0.25);
+}
+
+.hub-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+    margin-bottom: 0.6rem;
+}
+
+.hub-header p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   3. GRID DE CATEGORIAS (HUB GRID & CARDS)
+   ========================================================================== */
+.hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.hub-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 1.8rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito ao passar o rato (Hover) */
+.hub-card:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--accent-amber);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 
+                0 0 15px rgba(229, 169, 60, 0.1);
+}
+
+.hub-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hub-card p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Barra decorativa dourada na parte inferior do cartão no hover */
+.hub-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-amber), var(--accent-gold));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hub-card:hover::after {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   4. ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVIDADE)
+   ========================================================================== */
+@media (max-width: 600px) {
+    .hub-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .hub-grid {
+        grid-template-columns: 1fr; /* 1 coluna no telemóvel */
+    }
+
+    .hub-card {
+        padding: 1.4rem;
+    }
+}
+</style>
+</head>
+
+<body>
+    <section class="hub-grid">
+    <a href="#" class="hub-card">
+        <h3>🍹 Coquetéis Clássicos</h3>
+        <p>História, técnicas de preparo e receitas tradicionais.</p>
+    </a>
+
+    <a href="#" class="hub-card">
+        <h3>🍋 Ingredientes e Insumos</h3>
+        <p>Guia sobre xaropes artesanais, frutas e destilados.</p>
+    </a>
+
+    <a href="#" class="hub-card">
+        <h3>🥄 Utensílios de Bar</h3>
+        <p>Aprenda a usar coqueteleiras, dosadores e colheres bailarinas.</p>
+    </a>
+
+    <a href="#" class="hub-card">
+        <h3>🧊 Técnicas de MISTURA</h3>
+        <p>Métodos de montagem: mexido, batido ou diretamente no copo.</p>
+    </a>
+</section>
+</body>
+</html>

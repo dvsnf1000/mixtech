@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            align-items: center;
+            align-content: center;
+            place-items: center;
+            color: white;
+            margin: 0;
+            padding: 20;
+        }
+        section{
+            background-color: rgb(0, 0, 0);
+            height: 1000px;
+            width: 800px;
+            overflow: auto;
+            overflow: scroll;
+            overflow-y: scroll;
+             display: block;
+             border-radius: 20px;
+            padding: 10px;
+            border: 5px solid rgb(0, 0, 0);
+             min-height: 100vh;
+             margin: 0;           
+        }
+        .drink2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+        .drink2:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-amber);
+}
+        .drink2 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-amber);
+}
+.drink2 {
+    
+   --bg-drink2-hover: #1f2430; 
+   --accent-amber: #e5a93c;
+   --accent-gold: #f59e0b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #2a313d;
+}
+.drink2:hover {
+    background-color: var(--bg-drink-hover);
+    border-color: var(--accent-amber);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 
+                0 0 15px rgb(233, 151, 0);
+}
+.drink2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-amber), var(--accent-gold));
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+    </style>
+</head>
+<body>
+    <section>
+    <h1>Uma pagina sobre drinks (clique nas imagens para acessar os videos)</h1>
+    <H2>*Principais drinks/mais famosos</H2>
+    <div>
+
+        <h2>Caipirinha: Cachaça, pedaços de limão, açúcar e gelo.</h2>
+        <H1>como preparar</H1>
+        <p>1-Preparar o limão: Lave o limão. Corte as pontas e o limão ao meio. Retire o miolo branco do centro para evitar o gosto amargo. Corte as metades em gomos ou fatias. Coloque os pedaços de limão no copo com a casca virada para baixo. Adicione o açúcar por cima.</br> <br>2-Macerar: Use um socador para apertar o limão com cuidado, apenas para soltar o suco, sem esmagar a casca em excesso.</br> <br>3-Adicionar o gelo e a cachaça: Encha o copo com cubos de gelo. Despeje os 60 ml de cachaça.</br><br>4-Misturar: Com uma colher, puxe os ingredientes do fundo para cima até o açúcar dissolver por completo. Sirva em seguida.</br></p>
+        <H1>Historia</H1>
+        <p>A caipirinha nasceu no interior do estado de São Paulo por volta de 1918. Ela surgiu como um remédio caseiro à base de cachaça, limão, mel e alho para aliviar os sintomas da gripe espanhola. Com o tempo, o alho e o mel saíram, o açúcar e o gelo entraram, virando o coquetel nacional.</p>
+        <main class="drink">
+        <article class="drink2">
+            <a href="https://youtu.be/WQUdepQ7aGU?si=t1MvxB1ttNZUvnMi" target="_blank" >
+    <img src="https://i.panelinha.com.br/i1/bk-8730-blog-caipirinha-de-limao.webp" height="300" width="400" alt="foto de uma caipirinha">
+    </a>
+    </article>
+    </main>
+    </div>
+
+    <div>
+    <h2>Gin Tônica: Gin, água tônica, gelo e rodelas de limão ou botânicos.</h2>
+    <h1>Como preparar</h1>
+    <p>1-Comece colocando bastante gelo no copo, quanto mais gelo, melhor.</p>
+<br>
+2-Em seguida, corte um limão ao meio e passe metade ao longo de toda a borda para ter mais gosto da fruta ao beber.
+    </br>
+<br>
+3-Coloque o gin e depois a água tônica no copo.
+    </br>
+<br>
+4-Adicione o suco do segundo limão espremido.
+</br>
+<br>
+5-Finalize com rodelas da outra metade do primeiro limão e, se quiser, um ramo de alecrim para decorar.
+    </br>
+</p>
+<H1>Historia</H1>
+<p> Os oficiais e soldados do Império Britânico precisavam consumir quinino — extraído da casca da árvore de cinchona — para prevenir a malária. Como o remédio era extremamente amargo, eles misturaram a água tônica com gim, açúcar e limão para tornar a bebida saborosa.</p>
+    <main class="drink">
+        <article class="drink2">
+            <a href="https://youtu.be/cVbWAMd665w?si=rhlrjDt1JCMy9bMT" target="_blank">
+    <img src="https://blog.biglar.com.br/wp-content/uploads/2021/12/iStock-1310029561.jpg" height="300" width="400" alt="foto de uma caipirinha">
+    </a>
+    </div>
+
+    <div>
+    <h2>Mojito: Rum branco, folhas de hortelã, suco de limão, açúcar e água com gás.</h2>
+    <h1>Como preparar</h1>
+<p> 1-Misture bem para dissolver o açúcar.
+</br>
+    <br>
+    2-Bata levemente as folhas de hortelã na palma da mão para liberar os aromas e adicione ao copo (evite amassar demais com o socador para não amargar).
+</br>
+    <br>
+    3-Acrescente o rum branco e mexa levemente.Preencha o copo com bastante gelo picado.Complete o restante do copo com água com gás.
+</br>
+    <br>
+    4-Misture de baixo para cima com delicadeza para integrar os sabores sem perder o gás.Decore com um ramo de hortelã e uma rodela de limão.</p>
+</br>
+    <h1>historia</h1>
+    <p>O mojito nasceu em Cuba no século XVI, criado inicialmente como um remédio medicinal chamado "El Draque" em homenagem ao corsário inglês Sir Francis Drake. Sua tripulação misturava aguardente de cana rústica, limão, hortelã e açúcar para combater doenças no mar. Com o tempo, a aguardente virou rum e a bebida virou o famoso coquetel cubano.</p>
+    <main class="drink">
+        <article class="drink2">
+             <a href="https://youtu.be/OM6FYwGYY90?si=gYokg0lHBxgP_Phb" target="_blank">
+     <img src="https://www.saveur.com/uploads/2007/02/SAVEUR_Mojito_1149-Edit-scaled.jpg?format=auto&optimize=high&width=1440" height="300" width="400" alt="foto de uma caipirinha">
+    </a>
+    </div>
+
+     <div>
+     <h2>Moscow Mule: Vodca, suco de limão e refrigerante ou xarope de gengibre, finalizado com espuma cremosita.</h2>
+     <h1>Modo de preparo</h1>
+     <br>
+     <p>1-Encha uma caneca de cobre com bastante gelo para gelar o recipiente.
+     </br>
+        <br>
+        2-Adicione a vodka, o suco de limão fresco e o xarope de gengibre.Misture de leve com uma colher bailarina.
+     </br>
+        <br>
+        3-Complete o restante da caneca com a água com gás.Agite bem a espuma de gengibre para dar cremosidade e aplique por cima do drink.</p>
+     </br>
+     <h1>Historia</h1>
+     <p>O Moscow Mule nasceu em 1941, em Los Angeles (EUA), fruto da união de três interesses comerciais: John Martin (que tentava popularizar a vodka Smirnoff no país), Jack Morgan (dono do bar Cock 'n' Bull que tinha um estoque de cerveja de gengibre) e Sophie Berezinski (fabricante de canecas de cobre). Misturaram vodka, limão e ginger beer, criando um clássico mundial.</p>
+     <main class="drink">
+        <article class="drink2">
+             <a href="https://youtu.be/pknHUSUMASU?si=Tu6lj8q4xqtuO1Y3" target="_blank">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzezk6xgZEfml_aB9nZCB2HqHM11SVsyiyo02NI3k04SPCm7ZKfDKvjs&s=10" height="300" width="400" alt="foto de uma caipirinha">
+    </a> 
+    </div>
+
+     <div>
+     <h2>Negroni: Gim, Campari (bitter italiano) e vermute tinto doce, servidos com uma fatia de laranja.</h2>
+     <h1>Modo de preparo</h1>
+     <p><br> 1-Encha um copo baixo tipo Old Fashioned com bastante gelo para gelar o recipiente. </br> <br> 2-Despeje o gim, o Campari e o vermute tinto diretamente no copo. </br> <br>3-Mexa suavemente com uma colher por cerca de 12 segundos para misturar e gelar a bebida sem diluir. </br> <br>4-Esprema os óleos essenciais da casca de laranja sobre o topo do drink e coloque a casca dentro do copo para decorar. </br></p>
+     <h1>Historia</h1>
+     <p> O conde Camillo Negroni pediu ao bartender Fosco Scarselli, no Caffè Casoni, para deixar seu drink favorito — o Americano (feito com Campari, vermute tinto e água com gás) — mais forte, trocando a água com gás por gim.</p>
+     <main class="drink">
+        <article class="drink2">
+             <a href="https://youtu.be/G5Wte8PS6kw?si=WRbwmgxBxk0ZVwM2" target="_blank">
+     <img src="https://static01.nyt.com/images/2023/08/07/multimedia/JM-Negroni-mhwb/JM-Negroni-mhwb-mediumSquareAt3X-v2.jpg" height="300" width="400" alt="foto de uma caipirinha">
+     </a>
+    </div>
+
+     <div>
+      <h2>Piña Colada: Rum, leite de coco e suco de abacaxi.</h2>
+      <h1>Modo de preparo</h1>
+      <br>
+      <p>1-Coloque os ingredientes em ordem em uma coqueteleira.
+      </br>
+<br>
+      2-Bata por aproximadamente 10 segundos.
+      </br>
+<br>
+       3-Enfeite um copo com calda de chocolate e um pedaço pequeno de abacaxi.
+      </br>
+<br>
+       4-Por cima coloque coco ralado.</p>
+    </br>
+      <h1>Historia</h1>
+      <p>A Piña Colada nasceu em 1954 no Caribe Hilton em San Juan, Porto Rico. O bartender Ramón “Monchito” Marrero criou a mistura de rum branco, creme de coco e suco de abacaxi para ser a bebida exclusiva do hotel. O sucesso foi tão grande que virou a bebida oficial do país em 1978.</p>
+      <main class="drink">
+        <article class="drink2">
+             <a href="https://youtu.be/jKSHN0BCoAI?si=4XoUhZP0V0fdJZei" target="_blank">
+     <img src="https://www.giallozafferano.com.br/images/287-28771/pina-colada_1200x800.jpg" height="300" width="400" alt="foto de uma caipirinha">
+     </a>
+    </div>
+
+     <div>
+      <h2>Margarita: Tequila, licor de laranja (Cointreau ou Triple Sec) e suco de limão, com borda de sal.</h2>
+      <h1>modo de preparo</h1>
+
+      <p>
+        <br>
+        1-Umedeça a borda de uma taça de coquetel com uma fatia de limão.
+      </br>
+        <br>
+         2-Passe a borda da taça em um prato com sal para criar a crosta.
+      </br>
+         <br>
+          3- Encha uma coqueteleira com cubos de gelo.
+      </br>
+          <br>
+           4-Adicione a tequila, o licor de laranja e o suco de limão na coqueteleira.
+      </br>
+           <br>
+            5-Agite vigorosamente por cerca de 10 a 15 segundos até gelar bem.
+      </br>
+            <br>
+             6-Coe a mistura diretamente para a taça preparada, evitando passar o gelo da coqueteleira.
+      </br>
+             <br>
+              7-Decore com uma rodela ou gomo de limão na borda e sirva na hora.</p>
+      </br>
+      <h1>Historia</h1>
+      <p>Margarita é incerta e cercada por lendas populares. As duas histórias mais famosas apontam para o México entre as décadas de 1930 e 1940: a criação pelo bartender Carlos "Danny" Herrera em 1938 para uma cliente, ou a invenção pela socialite americana Margarita Sames em Acapulco, em 1948.</p>
+      <main class="drink">
+        <article class="drink2">
+             <a href="https://youtu.be/CX4tuRzWmGk?si=3bq7QUaiPV8rPFBb" target="_blank">
+     <img src="https://clean.co/cdn/shop/articles/CleanCo_Serve_Clean_T_0006_P_a98af4be-b62e-4cc7-b011-3dee1cd2fbd8.jpg?v=1748335523" height="300" width="400" alt="foto de uma caipirinha">
+     </a>
+    </div>
+     <div>
+      <h2>  Sex On The Bitch:Vodca, licor de pêssego, suco de laranja e um toque de groselha.</h2>
+      <h1>Modo de preparo</h1>
+      <p>
+        <br>
+        1-Encha um copo alto (tipo long drink) com bastante gelo.
+      </br>
+        <br>
+        2-Adicione a vodka e o licor de pêssego.Acrescente o suco de laranja e mexa levemente com uma colher bailarina.
+      </br>
+        <br>
+        3-Despeje a groselha (ou cranberry) delicadamente no fundo do copo para criar o efeito degradê característico.
+
+        <br>
+        4-Decore com uma rodela de laranja e uma cereja na borda.</p>
+      </br>
+
+      <h1>Historia</h1>
+      <p> Em 1987 na florida, uma marca de licor de pêssego ofereceu uma bonificação em dinheiro para o bar que vende-se mais o produto, o que fez o barman Ted Pizio ter a ideia de misturar vodka, o licor de pêssego, suco de laranja e suco de cranberry (ou grenadine) e o nome foi dado por que quando os clientes perguntavam como a bebida se chamava, Pizio pensou no que atraía tanta gente jovem e festeira para a região e respondeu: "sexo e praia" (sex and the beach). </p>
+      <main class="drink">
+        <article class="drink2">
+             <a href="https://youtu.be/rV3WTuZIcr0?si=9_NiWYMwpvy3tOXH" target="_blank">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHd4w5Ufl0yZPUx3m-VS_1za8AT9_K1IOd1w9d-ZANlqrazYFik4rmQs4&s=10" height="300" width="400" alt="foto de uma caipirinha">
+     </div>
+     </a>
+</section>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #0d0f12;
+            margin: 0;
+            min-height: 100vh; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            gap: 20px; 
+            font-family: Arial, sans-serif;
+        }
+        .bloco {
+            background-color: antiquewhite;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black; 
+            border-radius: 20px;     
+            padding: 20px;           
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+            .botão {
+    display: inline-block;
+    padding: 12px 28px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+     }
+     .botão-fundo {
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;              
+            width: 100%;
+            max-width: 400px;        
+     }
+    .botão {
+    background-color: #161a22;
+   --bg-botão-hover: #1f2430; 
+   --accent-amber: #e5a93c;
+   --accent-gold: #f59e0b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #2a313d;
+}
+.botão:hover {
+    background-color: var(--bg-botão-hover);
+    border-color: var(--accent-amber);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 
+                0 0 15px rgba(229, 169, 60, 0.1);
+}
+.botão::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-amber), var(--accent-gold));
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+.botão:hover::after {
+     opacity: 1;
+}
+.botão-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.botão-header .avatar {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--accent-amber), var(--accent-gold));
+    color: #000;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem auto;
+    box-shadow: 0 4px 20px rgba(229, 169, 60, 0.25);
+}     
+    </style>
+</head>
+<body>
+
+    <section class="botão-fundo">
+    <a href="drinks.html" class="botão"><h2>🍹 Ir para a seção de drinks</h2>
+      <p>História, técnicas de preparo e receitas.</p>
+     </a>
+
+    <a href="nome_dos_movimentos.html" class="botão"><h2> 🧊 Técnicas usadas e seus nomes</h2>
+      <p>Métodos de montagem: shake, dupla coagem, etc.</p></a>
+    
+    <a href="intrumentos_que_podem_ser_usados.html" class="botão"> <h2>🥄 Utensílios de Bar</h2>
+      <p>os intrumentos usados recomendados para fazer drinks </p>
+    </a>
+
+
+   </section>
+</body>
+</html>
