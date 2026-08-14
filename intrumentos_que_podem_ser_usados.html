@@ -6,15 +6,32 @@
     <title>Document</title>
     <style>
         body{
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
             align-items: center;
             align-content: center;
             place-items: center;
+            color: white;
             margin: 0;
-            padding: 20;
         }
+        section::-webkit-scrollbar {
+    width: 10px;
+}
+
+section::-webkit-scrollbar-track {
+    background: #151922;
+    border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb {
+    background: #555d70;
+    border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb:hover {
+    background: #737d94;
+}
         section{
-            background-color: aliceblue;
+            background-color: #1f2430;
             height: 1000px;
             width: 800px;
             overflow: auto;
@@ -23,13 +40,14 @@
              display: block;
              border-radius: 20px;
             padding: 10px;
-            border: 5px solid rgb(255, 255, 255);
+            border: 5px solid rgb(0, 0, 0);
              min-height: 100vh;
              margin: 0;           
         }
     </style>
 </head>
 <body>
+    <section>
     <H1>Para drinks profissionais ou melhores é indicado o uso de:</H1>
      <h2>Coqueteleira: Em inox (modelo Boston ou europeia) para gelar e misturar.</h2>
       <img src="https://product-hub-prd.madeiramadeira.com.br/1178870/images/c22caccb-ca33-4497-a1a0-c0f1a4cb78eab41e53b0ff66a283e43539a20c.png" height="300" width="300" alt="foto de uma caipirinha">
@@ -39,5 +57,6 @@
     <img src="https://static.wixstatic.com/media/d82633_81c420ea9cb041e3befe8ff692ac5b7d~mv2.png/v1/fill/w_480,h_488,al_c,lg_1,q_85,enc_avif,quality_auto/d82633_81c420ea9cb041e3befe8ff692ac5b7d~mv2.png" height="300" width="300" alt="foto de uma caipirinha">
     <H2>Coador de coquetéis (Strainer): Retém gelo e pedaços de frutas ao servir.</H2>
     <img src="https://acdn-us.mitiendanube.com/stores/001/043/810/products/278d6f5f4a74d2c08e520ad915259590-0a55ae5922bf39af4217158058634725-1024-1024.webp" height="300" width="300" alt="foto de uma caipirinha">
+    </section>
 </body>
 </html>
